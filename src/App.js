@@ -1,7 +1,9 @@
+import ProfileCard from "./components/ProfileCard";
 function App() {
   return (
-    <div className="App">
-      test
+    <div className="container">
+      <div className="btn-change-theme">Button</div>
+        <ProfileCard />
     </div>
   );
 }
