@@ -1,0 +1,86 @@
+@import 'reset';
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  background: $dark-primary-color;
+  color: $dark-text-primary;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .profile-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 580px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .profile-image{
+      @media screen and(max-width: 580px) {
+        width: 124px;
+        height: 124px;
+      }
+      width: 215px;
+      height: 215px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 4px solid $dark-secondary-color;
+      border-radius: 50%;
+      img {
+        @media screen and (max-width: 580px){
+          width: 124px;
+          height: 124px;
+        }
+        width: 215px;
+        height: 215px;
+        border-radius: 50%;
+      }
+    }
+    .profile-info {
+      @media screen and (max-width: 580px){
+        align-items: center;
+        padding-top: 40px;
+        transform: translateX(-20px);
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 0 0 0 3rem;
+      h1 {
+        @media screen and (max-width: 580px){
+          font-size: 2rem;
+          line-height: 48px;
+        }
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 70px;
+        padding: 3px 0;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $dark-text-secondary;
+        line-height: 33px;
+      }
+      .social-icons {
+        padding-top: 12px;
+        * {
+          width: 2.2rem;
+          height: 2.2rem;
+          padding-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
