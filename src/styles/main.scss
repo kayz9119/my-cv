@@ -5,6 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: $dark-primary-color;
   color: $dark-text-primary;
+  width: 100vw;
 }
 
 .container {
@@ -12,20 +13,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   .profile-card {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    @media screen and (max-width: 580px) {
+    width: 41rem;
+    padding: 3rem 0;
+    @media screen and (max-width: $responsive-mobile) {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
     }
     .profile-image{
-      @media screen and(max-width: 580px) {
+      @media screen and(max-width: $responsive-mobile) {
         width: 124px;
         height: 124px;
       }
@@ -37,7 +39,7 @@ body {
       border: 4px solid $dark-secondary-color;
       border-radius: 50%;
       img {
-        @media screen and (max-width: 580px){
+        @media screen and (max-width: $responsive-mobile){
           width: 124px;
           height: 124px;
         }
@@ -47,10 +49,11 @@ body {
       }
     }
     .profile-info {
-      @media screen and (max-width: 580px){
+      @media screen and (max-width: $responsive-mobile){
         align-items: center;
         padding-top: 40px;
         transform: translateX(-20px);
+        padding-left: 3rem;
       }
       display: flex;
       flex-direction: column;
@@ -58,12 +61,13 @@ body {
       width: 100%;
       padding: 0 0 0 3rem;
       h1 {
-        @media screen and (max-width: 580px){
+        @media screen and (max-width: $responsive-mobile){
           font-size: 2rem;
           line-height: 48px;
+          padding: 0;
         }
         font-weight: 400;
-        font-size: 3rem;
+        font-size: 2.75rem;
         line-height: 70px;
         padding: 3px 0;
       }
@@ -76,11 +80,43 @@ body {
       .social-icons {
         padding-top: 12px;
         * {
+          @media screen and (max-width: $responsive-mobile) {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
           width: 2.2rem;
           height: 2.2rem;
           padding-right: 1.5rem;
         }
       }
+    }
+  }
+  .profile-facts {
+    @media screen and (max-width: $responsive-mobile) {
+      width: 100%;
+      padding: 0;
+      justify-content: space-evenly;
+    }
+    display: flex;
+    flex-direction: row;
+    padding: 0 61px;
+    width: 750px;
+    align-items: center;
+    justify-content: space-between;
+    .fact {
+      @media screen and (max-width: $responsive-mobile) {
+        font-size: 14px;
+        padding: 1rem;
+      }
+      padding: 45px;
+      font-size: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 150px;
+      color: $dark-text-secondary;
     }
   }
 }
