@@ -119,4 +119,38 @@ body {
       color: $dark-text-secondary;
     }
   }
+  .profile-buttons {
+    @media screen and (max-width: $responsive-mobile) {
+      width: 100%;
+      margin-top: 30px;
+      font-size: 16px;
+      justify-content: space-around;
+    }
+    margin-top: 47px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    font-size: 22px;
+    a.button {
+      @media screen and (max-width: $responsive-mobile) {
+        width: 200px;
+        height: 55px;
+      }
+      width: 290px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $dark-tabs-bg;
+      border-radius: 10px;
+      color: $dark-btn-text-white;
+      &.button-cv {
+        background: $dark-secondary-color;
+        color: $dark-btn-text-black;
+      }
+    }
+  }
 }
