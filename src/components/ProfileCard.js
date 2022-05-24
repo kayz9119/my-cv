@@ -4,7 +4,7 @@ export default function ProfileCard () {
     return (
         <div className="profile-card">
             <div className="profile-image">
-                <img src="https://pbs.twimg.com/profile_images/1510473497654575107/fkxhILvd_400x400.jpg" alt="Profile Image"/>
+                <img src="https://pbs.twimg.com/profile_images/1510473497654575107/fkxhILvd_400x400.jpg" alt="Profile"/>
             </div>
             <div className="profile-info">
                 <h1>Kerem Arslantürk</h1>
