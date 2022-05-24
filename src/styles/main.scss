@@ -153,4 +153,66 @@ body {
       }
     }
   }
+  .profile-tabs {
+    @media screen and (max-width: $responsive-mobile) {
+      width: 25rem;
+      height: 4.375rem;
+      margin: 4rem 20px 2.5rem 20px;
+      border-radius: 10px;
+      justify-content: space-around;
+    }
+    position: relative;
+    z-index: 0;
+    width: 760px;
+    height: 120px;
+    margin: 80px 0 65px 0;
+    display: flex;
+    background: $dark-tabs-bg;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    font-weight: 500;
+    .indicator {
+      @media screen and (max-width: $responsive-mobile) {
+        width: 180px;
+        height: 50px;
+      }
+      position: absolute;
+      width: 350px;
+      height: 80px;
+      border-radius: 10px;
+      transition: left 300ms ease-in-out 0ms;
+    }
+    .tab-button {
+      @media screen and (max-width: $responsive-mobile) {
+        width: 155px;
+        height: 50px;
+      }
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 80px;
+      z-index: 5;
+      &:nth-child(1).active ~ .indicator {
+        @media screen and (max-width: $responsive-mobile) {
+          left: 10px;
+        }
+        left: 20px;
+        background: $dark-tabs-selected-bg;
+        z-index: 0;
+      }
+      &:nth-child(2).active ~ .indicator {
+        @media screen and (max-width: $responsive-mobile) {
+          left: 210px;
+        }
+        left: 390px;
+        background: $dark-tabs-selected-bg;
+        z-index: 1;
+      }
+    }
+  }
 }
