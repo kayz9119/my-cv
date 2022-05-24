@@ -1,7 +1,15 @@
+import { HiDownload } from "react-icons/hi";
+
 export default function ProfileButtons () {
     return (
-        <div>
-            Profile Buttons
+        <div className="profile-buttons">
+            <a href="/" className="button button-cv">
+                Download CV
+                <HiDownload />
+            </a>
+            <a href="/" className="button">
+                Contact Me
+            </a>
         </div>
     )
 }
