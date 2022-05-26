@@ -155,7 +155,7 @@ body {
   }
   .profile-tabs {
     @media screen and (max-width: $responsive-mobile) {
-      width: 25rem;
+      width: 90%;
       height: 4.375rem;
       margin: 4rem 20px 2.5rem 20px;
       border-radius: 10px;
@@ -175,7 +175,7 @@ body {
     font-weight: 500;
     .indicator {
       @media screen and (max-width: $responsive-mobile) {
-        width: 180px;
+        width: 45%;
         height: 50px;
       }
       position: absolute;
@@ -199,7 +199,7 @@ body {
       z-index: 5;
       &:nth-child(1).active ~ .indicator {
         @media screen and (max-width: $responsive-mobile) {
-          left: 10px;
+          left: 2.5%;
         }
         left: 20px;
         background: $dark-tabs-selected-bg;
@@ -207,7 +207,7 @@ body {
       }
       &:nth-child(2).active ~ .indicator {
         @media screen and (max-width: $responsive-mobile) {
-          left: 210px;
+          left: 52.5%;
         }
         left: 390px;
         background: $dark-tabs-selected-bg;
