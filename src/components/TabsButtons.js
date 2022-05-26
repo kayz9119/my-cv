@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { MainContext, useContext } from "./MainContext";
 
 export default function TabsButtons () {
-    const [active, setActive] = useState(0);
+    const {active, setActive} = useContext(MainContext)
     const handleActive = (id) => {
         setActive(id);
     }
