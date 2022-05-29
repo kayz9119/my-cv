@@ -5,10 +5,10 @@ export default function ProfileFacts () {
                 <span>7</span> Years of work experience
             </div>
             <div className="fact">
-                <span>50+</span> Completed projects
+                <span>20+</span> Completed projects
             </div>
             <div className="fact">
-                <span>20+</span> Satisfied customers
+                <span>10+</span> Satisfied customers
             </div>
         </div>
     );
