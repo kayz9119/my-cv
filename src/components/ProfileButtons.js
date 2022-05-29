@@ -7,7 +7,7 @@ export default function ProfileButtons () {
                 Download CV
                 <HiDownload />
             </a>
-            <a href="/" className="button">
+            <a href="mailto:keremarslntrkk@hotmail.com" className="button">
                 Contact Me
             </a>
         </div>
