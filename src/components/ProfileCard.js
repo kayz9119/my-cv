@@ -8,12 +8,12 @@ export default function ProfileCard () {
             </div>
             <div className="profile-info">
                 <h1>Kerem Arslantürk</h1>
-                <p>Software Engineer</p>
+                <p>Software Back-End Developer</p>
                 <div className="social-icons">
-                    <BsGithub />
-                    <BsTwitter />
-                    <BsLinkedin />
-                    <BsInstagram />
+                    <a href="https://github.com/kayz9119/" target="_blank"><BsGithub /></a>
+                    <a href="https://twitter.com/kayzmonroe/" target="_blank" ><BsTwitter /></a>
+                    <a href="https://www.linkedin.com/keremarslntrkk/" target="_blank" ><BsLinkedin /></a>
+                    <a href="https://instagram.com/kayz9119/" target="_blank" ><BsInstagram /></a>
                 </div>
             </div>
         </div>
