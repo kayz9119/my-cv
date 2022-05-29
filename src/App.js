@@ -6,6 +6,7 @@ import TabsContent from "./components/TabsContent";
 import {MainContext} from "./components/MainContext";
 import { useState, useEffect } from "react";
 import {BiBrightnessHalf} from "react-icons/bi"
+import Footer from "./components/Footer";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -40,6 +41,7 @@ function App() {
         <ProfileButtons />
         <TabsButtons />
         <TabsContent />
+        <Footer />
       </div>
     </MainContext.Provider>
   );
