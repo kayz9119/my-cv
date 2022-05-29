@@ -10,10 +10,10 @@ export default function ProfileCard () {
                 <h1>Kerem Arslantürk</h1>
                 <p>Software Back-End Developer</p>
                 <div className="social-icons">
-                    <a href="https://github.com/kayz9119/" target="_blank"><BsGithub /></a>
-                    <a href="https://twitter.com/kayzmonroe/" target="_blank" ><BsTwitter /></a>
-                    <a href="https://www.linkedin.com/keremarslntrkk/" target="_blank" ><BsLinkedin /></a>
-                    <a href="https://instagram.com/kayz9119/" target="_blank" ><BsInstagram /></a>
+                    <a href="https://github.com/kayz9119/" target="_blank" rel="noreferrer" ><BsGithub /></a>
+                    <a href="https://twitter.com/kayzmonroe/" target="_blank" rel="noreferrer" ><BsTwitter /></a>
+                    <a href="https://www.linkedin.com/keremarslntrkk/" target="_blank" rel="noreferrer" ><BsLinkedin /></a>
+                    <a href="https://instagram.com/kayz9119/" target="_blank" rel="noreferrer" ><BsInstagram /></a>
                 </div>
             </div>
         </div>
