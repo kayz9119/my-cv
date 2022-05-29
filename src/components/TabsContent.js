@@ -12,7 +12,7 @@ export default function TabsContent () {
                         <h1>{post.name}</h1>
                         <p>{post.description}</p>
                         <div className="project-link">
-                            <a href={post.projectLink}>
+                            <a href={post.projectLink} target="_blank">
                                 <BsLink size="20" />
                             </a>
                         </div>
