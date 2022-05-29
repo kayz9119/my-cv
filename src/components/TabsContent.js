@@ -7,7 +7,7 @@ export default function TabsContent () {
         <div className="profile-tabs-content">
             {active === 1 ? (<div>There is no skill content</div>) : posts.map((post, key) => (
                 <div className="project" key={key}>
-                    <img src={post.image} className="project-img" />
+                    <img src={post.image} className="project-img" alt={post.description} />
                     <div className="project-detail">
                         <h1>{post.name}</h1>
                         <p>{post.description}</p>

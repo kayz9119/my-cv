@@ -14,7 +14,6 @@ function App() {
     fetch("https://myportfolioapi-12345.herokuapp.com/portfolio")
         .then(res => res.json())
         .then(res => setPosts([...res]));
-    console.log(posts)
   }, []);
   const data = {
     active,
