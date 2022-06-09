@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   const [posts, setPosts] = useState([]);
+  const [certs, setCerts] = useState([]);
   const [active, setActive] = useState(0);
   const [theme, setTheme] = useState(0);
 
@@ -23,11 +24,18 @@ function App() {
         .then(res => setPosts([...res]));
   }, []);
 
+  useEffect( () => {
+    fetch("https://myportfolioapi-12345.herokuapp.com/certificate")
+        .then(res => res.json())
+        .then(res => setCerts([...res]));
+  }, []);
+
 
   const data = {
     active,
     setActive,
-    posts
+    posts,
+    certs
   }
 
   return (
