@@ -12,7 +12,7 @@ export default function ProfileCard () {
                 <div className="social-icons">
                     <a href="https://github.com/kayz9119/" target="_blank" rel="noreferrer" ><BsGithub /></a>
                     <a href="https://twitter.com/kayzmonroe/" target="_blank" rel="noreferrer" ><BsTwitter /></a>
-                    <a href="https://www.linkedin.com/keremarslntrkk/" target="_blank" rel="noreferrer" ><BsLinkedin /></a>
+                    <a href="https://www.linkedin.com/in/keremarslntrkk/" target="_blank" rel="noreferrer" ><BsLinkedin /></a>
                     <a href="https://instagram.com/kayz9119/" target="_blank" rel="noreferrer" ><BsInstagram /></a>
                 </div>
             </div>
